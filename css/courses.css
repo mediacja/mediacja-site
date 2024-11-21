@@ -1,0 +1,149 @@
+.right-page {
+  color: #29470a;
+  text-align: right;
+}
+
+.reasons {
+  font-size: 20px;
+}
+
+.total {
+  width: 100%;
+}
+
+.total .box {
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.total ul {
+  list-style: none;
+}
+
+.total img {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+}
+
+.total li {
+  padding: 10px 5px;
+  width: fit-content;
+  height: fit-content;
+}
+
+.shake {
+  animation: shake 1s;
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translateX(-0.5px);
+  }
+
+  20%,
+  80% {
+    transform: translateX(1px);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translateX(-2px);
+  }
+
+  40%,
+  60% {
+    transform: translateX(2px);
+  }
+}
+
+.with-us {
+  font-size: 20px;
+}
+
+.with-us div {
+  margin-bottom: 20px;
+  padding: 10px;
+  box-shadow: 0.25rem 0.25rem 0.6rem rgba(0, 0, 0, 0.05),
+    0 0.5rem 1.125rem rgba(75, 0, 0, 0.05);
+  border-radius: 0 0.5rem 0.5rem 0.5rem;
+  border-top: 2px solid #305708;
+  border-left: 2px solid #305708;
+}
+
+.profile-card {
+  position: relative;
+  overflow: hidden;
+  max-width: 500px;
+  color: #29470a;
+  text-align: left;
+  line-height: 1.4em;
+  box-shadow: 0 0.5rem 1.2rem rgba(0, 0, 0, 0.2),
+    0 1rem 2rem rgba(75, 0, 0, 0.2);
+  padding: 0;
+}
+
+.profile-card * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+.profile-card img {
+  max-width: 100%;
+  max-width: 500px;
+  margin-bottom: -20%;
+  vertical-align: top;
+}
+
+.profile-card .box {
+  width: 100%;
+  background-color: #fff;
+  padding: 25px;
+  position: relative;
+}
+
+.profile-card .box:before {
+  position: absolute;
+  content: "";
+  bottom: 100%;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 55px 0 0 500px;
+  border-color: transparent transparent transparent #fff;
+}
+
+.profile-card .profile {
+  border-radius: 50%;
+  position: absolute;
+  bottom: 100%;
+  left: 25px;
+  z-index: 1;
+  max-width: 90px;
+  opacity: 1;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.profile-card h2 {
+  margin: -32px 0 5px;
+  font-weight: 400;
+}
+
+.profile-card h2 span {
+  display: block;
+  font-size: 16px;
+  color: #29470a;
+  margin-top: 7px;
+}
+
+.profile-card p {
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: #222;
+}

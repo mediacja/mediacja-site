@@ -1,0 +1,231 @@
+.questions .row {
+  font-size: 20px;
+}
+
+.questions .list {
+  position: relative;
+}
+
+.questions .list ul {
+  position: relative;
+}
+
+.questions .list ul li {
+  position: relative;
+  left: 0;
+  list-style: none;
+  margin: 4px 0;
+  border-left: 2px solid #305708;
+  transition: 0.5s;
+}
+
+.questions .list ul li span {
+  position: relative;
+  padding: 4px 8px 7px;
+  padding-left: 12px;
+  display: inline-block;
+  z-index: 1;
+  transition: 0.5s;
+}
+
+.questions .list ul li:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #305708;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: 0.5s;
+}
+
+@media (max-width: 767px) {
+  .list-2 {
+    margin-top: -15px;
+  }
+}
+
+.reasons {
+  width: 80%;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  .reasons {
+    width: 100%;
+  }
+
+  .will-do-and-not ul {
+    width: 100% !important;
+  }
+}
+
+.ag-format-container {
+  width: 1142px;
+  margin: 0 auto;
+}
+
+.ag-courses_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+
+  padding: 50px 0;
+}
+
+.card {
+  padding: 30px 20px 15px;
+  width: 450px;
+  overflow: hidden;
+  border-radius: 28px;
+
+  overflow: hidden;
+
+  position: relative;
+}
+
+.card:hover .card-bg {
+  -webkit-transform: scale(10);
+  -ms-transform: scale(10);
+  transform: scale(10);
+}
+
+.card-text {
+  font-size: 18px;
+
+  z-index: 2;
+  position: relative;
+  transition: 0.5s;
+}
+
+.card-number {
+  margin-top: -15px;
+  margin-bottom: 5px;
+  font-size: 28px;
+  display: block;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  padding-top: 3px;
+  color: #fff;
+  border-radius: 50%;
+
+  z-index: 2;
+  position: relative;
+  transition: 0.5s;
+}
+
+.card:hover .card-text {
+  color: #fff;
+}
+
+.ag-courses-item_date {
+  font-weight: bold;
+  color: #f9b234;
+
+  -webkit-transition: color 0.5s ease;
+  -o-transition: color 0.5s ease;
+  transition: color 0.5s ease;
+}
+
+.card-bg {
+  height: 128px;
+  width: 128px;
+  background-color: #f9b234;
+
+  z-index: 1;
+  position: absolute;
+  top: -75px;
+  right: -75px;
+
+  border-radius: 50%;
+
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.card:nth-child(2n) .card-bg {
+  background-color: #59941f;
+}
+
+.card:nth-child(2n) .card-number {
+  background-color: #59941f;
+}
+
+.card:nth-child(2n):hover .card-number {
+  background-color: #fff;
+  color: #59941f;
+}
+
+.card:nth-child(3n) {
+  margin: auto;
+}
+
+.card:nth-child(3n) .card-bg {
+  background-color: #29470a;
+}
+
+.card:nth-child(3n) .card-number {
+  background-color: #29470a;
+}
+
+.card:nth-child(3n):hover .card-number {
+  background-color: #fff;
+  color: #29470a;
+}
+
+.right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.right .card {
+  flex-basis: 450px;
+  flex-shrink: 0;
+}
+
+.right .card .card-bg {
+  background-color: #1a2e07;
+}
+
+.right .card .card-number {
+  background-color: #1a2e07;
+}
+
+.right .card:hover .card-number {
+  background-color: #fff;
+  color: #1a2e07;
+}
+
+@media (max-width: 575px) {
+  .card {
+    width: 300px;
+  }
+
+  .right .card {
+    flex-basis: 300px;
+  }
+}
+
+.will-do-and-not ul {
+  font-size: 20px;
+  list-style: none;
+  padding-left: 20px;
+  width: fit-content;
+  margin: auto;
+  width: 50%;
+}
+
+.will-do-and-not ul li {
+  margin-bottom: 20px;
+}
+
+.will-do-and-not ul li img {
+  margin-right: 10px;
+}

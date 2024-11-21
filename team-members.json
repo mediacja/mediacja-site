@@ -1,0 +1,16 @@
+[
+    {
+        "name": "Олег",
+        "surname": "Бреский",
+        "phone": "+7 (999) 999-99-99",
+        "img": "Oleg.jpeg",
+        "description": "Автор курса"
+    },
+    {
+        "name": "Лариса",
+        "surname": "Журкевич",
+        "phone": "+7 (123) 456-78-90",
+        "img": "Larisa.jpeg",
+        "description": "Преподаватель"
+    }
+]

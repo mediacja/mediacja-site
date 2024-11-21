@@ -1,0 +1,261 @@
+@media (max-width: 767px) {
+  .list-2 {
+    margin-top: -15px;
+  }
+}
+
+.about .box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about h1 {
+  font-size: 55px;
+  margin-bottom: 40px;
+}
+
+.about .email {
+  margin-top: 15px;
+  font-size: 40px;
+  color: #305708;
+}
+
+.about ul {
+  /* width: 60%; */
+  font-size: 23px;
+  background-color: rgb(48, 87, 8);
+  background-color: rgba(48, 87, 8, 0.3);
+  padding: 40px 20px 40px 60px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media (max-width: 575px) {
+  .about ul {
+    border-radius: 0;
+  }
+}
+
+.company-name {
+  margin-top: 60px;
+  text-align: center;
+  font-size: 40px;
+}
+
+.services img {
+  display: block;
+  margin: 15px auto 15px;
+  width: 100px;
+}
+
+.services .box {
+  height: 100%;
+
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  background-color: #ffffff;
+  padding: 10px 30px;
+  box-shadow: 0.1rem 0.1rem 1.5rem rgba(0, 0, 0, 0.3);
+  border-top: solid 10px #305708;
+}
+
+.questions .row {
+  font-size: 20px;
+}
+
+.questions .list {
+  position: relative;
+}
+
+.questions .list ul {
+  position: relative;
+}
+
+.questions .list ul li {
+  position: relative;
+  left: 0;
+  list-style: none;
+  margin: 4px 0;
+  border-left: 2px solid #305708;
+  transition: 0.5s;
+}
+
+.questions .list ul li span {
+  position: relative;
+  padding: 4px 8px 7px;
+  padding-left: 12px;
+  display: inline-block;
+  z-index: 1;
+  transition: 0.5s;
+}
+
+.questions .list ul li:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #305708;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: 0.5s;
+}
+
+.about-mediation {
+  font-size: 20px;
+}
+
+.about-mediation .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-mediation .text {
+  background-color: #305708;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.about-mediation ul {
+  list-style: none;
+  padding-left: 20px;
+  width: fit-content;
+  margin: auto;
+}
+
+.about-mediation ul li {
+  margin-bottom: 20px;
+}
+
+.about-mediation ul li img {
+  margin-right: 10px;
+}
+
+.mediation-advantages {
+  font-size: 20px;
+}
+
+.mediation-advantages div {
+  margin-bottom: 20px;
+  padding: 10px;
+  box-shadow: 0.25rem 0.25rem 0.6rem rgba(0, 0, 0, 0.05),
+    0 0.5rem 1.125rem rgba(75, 0, 0, 0.05);
+  border-radius: 0 0.5rem 0.5rem 0.5rem;
+  border-top: 2px solid #305708;
+  border-left: 2px solid #305708;
+}
+
+.our-team {
+  height: 90%;
+  padding: 30px 0 40px;
+  margin-bottom: 30px;
+  background-color: #f7f5ec;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.our-team .picture {
+  display: inline-block;
+  height: 130px;
+  width: 130px;
+  margin-bottom: 50px;
+  z-index: 1;
+  position: relative;
+}
+
+.our-team .picture::before {
+  content: "";
+  width: 100%;
+  height: 0;
+  border-radius: 50%;
+  background-color: #305708;
+  position: absolute;
+  bottom: 135%;
+  right: 0;
+  left: 0;
+  opacity: 0.9;
+  transform: scale(3);
+  transition: all 0.3s linear 0s;
+}
+
+.our-team:hover .picture::before {
+  height: 100%;
+}
+
+.our-team .picture::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #305708;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.our-team .picture img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  transform: scale(1);
+  transition: all 0.9s ease 0s;
+}
+
+.our-team:hover .picture img {
+  box-shadow: 0 0 0 14px #f7f5ec;
+  transform: scale(0.7);
+}
+
+.our-team .title {
+  display: block;
+  font-size: 15px;
+  color: #4e5052;
+}
+
+.our-team .social {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #305708;
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  transition: all 0.5s ease 0s;
+}
+
+@media (max-width: 1000px) {
+  .our-team .social {
+    bottom: 0;
+  }
+}
+
+.our-team:hover .social {
+  bottom: 0;
+}
+
+.our-team .social li {
+  display: inline-block;
+}
+
+.our-team .social li a {
+  display: block;
+  padding: 10px;
+  font-size: 17px;
+  color: white;
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+}
+
+.our-team .social li a:hover {
+  color: #305708;
+  background-color: #f7f5ec;
+}
