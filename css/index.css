@@ -38,6 +38,10 @@
   .about ul {
     border-radius: 0;
   }
+
+  .about .email {
+    font-size: 27px;
+  }
 }
 
 .company-name {
